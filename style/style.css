@@ -1,0 +1,38 @@
+body{
+    background-image: url(/assets/bg.jpg);
+}
+
+h1{
+    text-decoration: underline;
+    margin: 20px;
+    color: whitesmoke;
+    padding: 20px;
+}
+
+
+.form{
+    border: 5px solid  whitesmoke;
+    margin: 100px;
+    width: 350px;
+    text-align: center;
+    margin-left: 140px;
+    padding: 50px;
+
+}
+table{
+    text-align: center;
+}
+input{
+    padding: 15px;
+
+}
+textarea{
+    padding: 15px;
+}
+label{
+    color: whitesmoke;
+
+}
+button{
+   font-size: larger;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="prog.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <center>
+    <h1>VALIDATION FORM</h1>
+    <div class="form">
+    
+      <table>
+     <form name="validateform" action="message.html" method="post" onsubmit=" return validationform()">
+      
+      <tr>
+        <td><label for="fname">FIRSTNAME</label></td>
+        <td><input type="text" name="name"><br><br></td>
+      </tr>
+        <tr>
+            <td><label for="lname">LASTNAME</label></td>
+        <td><input type="text" name="name2" ><br><br></td>
+        </tr>
+        <tr>
+        <td><label for="city">CITY</label></td>
+        <td><input type="text" name="city" required><br><br></td>
+        </tr>
+        <tr>
+        <td><label for="num">PHONE NUMBER</label></td>
+        <td><input type="text" name="number"><br><br></td>
+        </tr>
+        <tr>
+        
+        <td><label for="add" >ADDRESS</label></td>
+        <td><textarea name="add" required></textarea> <br><br></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td><button type="Submit" value="Submit">Submit</button>
+
+        </tr>
+
+     </form>
+      </table>
+  
+    </div>
+    </center>
+     
+     
+
+     <script>
+        function validationform()
+        {
+            var firstname=document.validateform.name.value;
+            var lastname=document.validateform.name2.value;
+            var city=document.validateform.city.value;
+            var num=document.validateform.number.value;
+            if(firstname === null || firstname === "")
+            {
+                alert("name should not be empty")
+                return false;
+            }
+            else if(num.length<10)
+            {
+                alert("number should be valid");
+                return false;
+            }
+
+        } 
+    </script>
+
+</body>
+</html>
